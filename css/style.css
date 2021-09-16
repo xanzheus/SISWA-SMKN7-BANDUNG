@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Ranchers&family=Rowdies:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.jumbotron {
+	background-image: url(../img/anu.jpg);
+	background-size: cover;
+	height: 550px;
+	text-align: center;
+	margin-top: -70px;
+}
+
+.jumbotron .display-4 {
+	color: white;
+	margin-top: 100px;
+}
+
+.jumbotron p {
+	color: white;
+	margin-top: 10px;
+}
+
+.jumbotron hr {
+	border-color: #fc0303;
+	width: 70px;
+	border-width: 3px;
+}
+
+.times{
+	display: flex;
+	justify-content: center;
+}
+
+.times p {
+	font-size: 20px;
+	color: red;
+	margin-left: 6px;
+	margin-top: -10px;
+}
+
+.section-header {
+	font-family: 'Modak', cursive;
+}
+
+.waktu {
+	font-family: 'Rowdies', cursive;
+}
+
+.card-header {
+	font-family: 'Ranchers', cursive;
+}
+
+.card-body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.card {
+	font-family: 'Roboto', sans-serif;
+}
+
+nav {
+	font-family: 'Roboto', sans-serif;
+}

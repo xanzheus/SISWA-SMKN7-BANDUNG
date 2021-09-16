@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="id">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Daftar Absen Pengurus Organisasi OSIS SMPN 95 JAKARTA">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/front.css">
+	<link rel="stylesheet" href="../css/landing.css">
+	<link rel="stylesheet" href="../css/icon.css">
+	<link rel="shortcut icon" href="../img/osis.png">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<title>Absen</title>
+	<script src="jam.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand font-weight-bold" href="../">Saltara'os 4.0</a>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+			    <ul class="navbar-nav ml-auto">
+			    	<li class="nav-item active">
+			        	<a class="nav-link js-scroll-trigger" href="../">Home<span class="sr-only">(current)</span></a>
+			    	</li>
+			    	<li class="nav-item">
+			        	<a class="nav-link js-scroll-trigger" href="../pengurus-organisasi/">Pengurus Organisasi</a>
+			      	</li>
+			      	<li class="nav-item">
+			        	<a class="nav-link js-scroll-trigger" href="../absen/">Daftar Absen</a>
+			      	</li>
+			      	<li class="nav-item">
+			        	<a class="nav-link js-scroll-trigger" href="../kontak/">Kontak</a>
+			      	</li>
+			    </ul>
+			</div>
+		</div>
+	</nav>
+	<section class="students">
+		<div class="container">
+			<div class="section-header text-center">
+				<h1>Daftar Absen</h1>
+				<div class="divider mx-auto"></div>
+				<div class="waktu">
+					<br><p>Tanggal dan Waktu Sekarang</p>
+					<div class="times">
+						<p id="date"></p>
+						<p id="demo"></p>
+						<script type="text/javascript">
+							function showTime() {
+							    var a_p = "";
+							    var today = new Date();
+							    var curr_hour = today.getHours();
+							    var curr_minute = today.getMinutes();
+							    var curr_second = today.getSeconds();
+								    curr_hour = checkTime(curr_hour);
+								    curr_minute = checkTime(curr_minute);
+								    curr_second = checkTime(curr_second);
+								    document.getElementById('demo').innerHTML=curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+								}
+								 
+								function checkTime(i) {
+								    if (i < 10) {
+								        i = "0" + i;
+								    }
+								    return i;
+								}
+								setInterval(showTime, 500);
+						</script>
+						<script>
+				            var date = new Date();
+							var tahun = date.getFullYear();
+							var bulan = date.getMonth();
+							var tanggal = date.getDate();
+							var hari = date.getDay();
+
+							switch(hari) {
+								case 0: hari = "Minggu"; break;
+								case 1: hari = "Senin"; break;
+								case 2: hari = "Selasa"; break;
+								case 3: hari = "Rabu"; break;
+								case 4: hari = "Kamis"; break;
+								case 5: hari = "Jum'at"; break;
+								case 6: hari = "Sabtu"; break;
+							}
+
+							switch(bulan) {
+								case 0: bulan = "Januari"; break;
+								case 1: bulan = "Februari"; break;
+								case 2: bulan = "Maret"; break;
+								case 3: bulan = "April"; break;
+								case 4: bulan = "Mei"; break;
+								case 5: bulan = "Juni"; break;
+								case 6: bulan = "Juli"; break;
+								case 7: bulan = "Agustus"; break;
+								case 8: bulan = "September"; break;
+								case 9: bulan = "Oktober"; break;
+								case 10: bulan = "November"; break;
+								case 11: bulan = "Desember"; break;
+							}
+
+							document.getElementById('date').innerHTML=hari + ", " + tanggal + " " + bulan + " " + tahun;
+				        </script>
+					</div>
+				</div>
+			</div>
+			<div class="section-body">
+				<div class="card mb-5">
+                		<div class="card-header">
+                    		<h3>List :</h3>
+                		</div>
+                		<div class="card-body">
+                    		<div class="table-responsive">
+                        		<table class="table table-striped">
+								<thead>
+									<tr>
+										<th>No</th>
+										<th>Nama</th>
+										<th>Jabatan</th>
+										<th>Kelas</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Muhammad Elo Saputra</td>
+										<td>Ketua Osis</td>
+										<td>8E</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Muhammad Ardi Darmawan</td>
+										<td>Wakil ketua OSIS 1</td>
+										<td>8F</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>Muhammad Yusuf Aditya Rizky</td>
+										<td>Wakil ketua OSIS 2</td>
+										<td>7E</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>Fazya Anjelir Khairunnisa</td>
+										<td>Sekretaris 1</td>
+										<td>8C</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>Salwa Nazhifa Azzahra</td>
+										<td>Sekretaris 2</td>
+										<td>7B</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>Davina Putri Sahubawa</td>
+										<td>Bendahara 1</td>
+										<td>8C</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>Annisa Sayahdina</td>
+										<td>Bendahara 2</td>
+										<td>7E</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>Keisha Hanania Raziq</td>
+										<td>Humas 1</td>
+										<td>8D</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td>Afgansyah Husam Mahdavikia</td>
+										<td>Humas 2</td>
+										<td>7E</td>
+									</tr>
+									<tr>
+										<td>10</td>
+										<td>Affan Abdillah Hasan</td>
+										<td>Sekbid 1 - Koordinator bidang</td>
+										<td>8A</td>
+									</tr>
+									<tr>
+										<td>11</td>
+										<td>Asfa Al Maghfirah</td>
+										<td>Anggota Sekbid 1</td>
+										<td>7C</td>
+									</tr>
+									<tr>
+										<td>12</td>
+										<td>Moreno Damanik</td>
+										<td>Sekbid 1 - Koordinator bidang</td>
+										<td>8D</td>
+									</tr>
+									<tr>
+										<td>13</td>
+										<td>Feodora Mariska Berliana Pardede</td>
+										<td>Anggota Sekbid 1</td>
+										<td>7C</td>
+									</tr>
+									<tr>
+										<td>14</td>
+										<td>Vivi Maulidani</td>
+										<td>Sekbid 2 - Koordinator bidang</td>
+										<td>8D</td>
+									</tr>
+									<tr>
+										<td>15</td>
+										<td>Naya Andhira Tajudin</td>
+										<td>Anggota Sekbid 2</td>
+										<td>7D</td>
+									</tr>
+									<tr>
+										<td>16</td>
+										<td>Kaylamevia Ariyanto</td>
+										<td>Anggota Sekbid 2</td>
+										<td>8B</td>
+									</tr>
+									<tr>
+										<td>17</td>
+										<td>Amira Aurelia Mazaya</td>
+										<td>Anggota Sekbid 2</td>
+										<td>7B</td>
+									</tr>
+									<tr>
+										<td>18</td>
+										<td>Rotua Vicky Winardo Pardede</td>
+										<td>Sekbid 3 - Koordinator bidang</td>
+										<td>8D</td>
+									</tr>
+									<tr>
+										<td>19</td>
+										<td>Khaidar Khalid</td>
+										<td>Anggota Sekbid 3</td>
+										<td>7G</td>
+									</tr>
+									<tr>
+										<td>20</td>
+										<td>Hasht Behest Esfahan</td>
+										<td>Anggota Sekbid 3</td>
+										<td>8A</td>
+									</tr>
+									<tr>
+										<td>21</td>
+										<td>Nabilah Rahmawati</td>
+										<td>Anggota Sekbid 3</td>
+										<td>8B</td>
+									</tr>
+									<tr>
+										<td>22</td>
+										<td>Naila Fariha</td>
+										<td>Anggota Sekbid 3</td>
+										<td>8C</td>
+									</tr>
+									<tr>
+										<td>23</td>
+										<td>Shabina Salsabila</td>
+										<td>Anggota Sekbid 3</td>
+										<td>8B</td>
+									</tr>
+									<tr>
+										<td>24</td>
+										<td>Naufal Khalish</td>
+										<td>Sekbid 4 - Koordinator bidang</td>
+										<td>8B</td>
+									</tr>
+									<tr>
+										<td>25</td>
+										<td>Fitria Ramadhani</td>
+										<td>Anggota Sekbid 4</td>
+										<td>7G</td>
+									</tr>
+									<tr>
+										<td>26</td>
+										<td>Zava Zaneta Putra Irvani</td>
+										<td>Anggota Sekbid 4</td>
+										<td>8F</td>
+									</tr>
+									<tr>
+										<td>27</td>
+										<td>Aisyah Nisrina</td>
+										<td>Anggota Sekbid 4</td>
+										<td>8A</td>
+									</tr>
+									<tr>
+										<td>28</td>
+										<td>Meidina Athaya</td>
+										<td>Anggota Sekbid 4</td>
+										<td>8B</td>
+									</tr>
+									<tr>
+										<td>29</td>
+										<td>Anindita Dinda Tazkia</td>
+										<td>Sekbid 5 – Koordinator bidang</td>
+										<td>8F</td>
+									</tr>
+									<tr>
+										<td>30</td>
+										<td>Zahra Dwi Syafira</td>
+										<td>Anggota Sekbid 5</td>
+										<td>7B</td>
+									</tr>
+									<tr>
+										<td>31</td>
+										<td>Nazhifa Nabila Putri</td>
+										<td>Anggota Sekbid 5</td>
+										<td>7E</td>
+									</tr>
+									<tr>
+										<td>32</td>
+										<td>Amanda Rizna Putri Pohan</td>
+										<td>Anggota Sekbid 5</td>
+										<td>8A</td>
+									</tr>
+									<tr>
+										<td>33</td>
+										<td>Naznin Raina Salwa</td>
+										<td>Anggota Sekbid 5</td>
+										<td>8D</td>
+									</tr>
+									<tr>
+										<td>34</td>
+										<td>Mohammad Alvi Rizky</td>
+										<td>Sekbid 6 – Koordinator bidang</td>
+										<td>8D</td>
+									</tr>
+									<tr>
+										<td>35</td>
+										<td>Alvaro Putra Pratama</td>
+										<td>Anggota Sekbid 6</td>
+										<td>7B</td>
+									</tr>
+									<tr>
+										<td>36</td>
+										<td>Muhammad Farel Syahtiawan</td>
+										<td>Anggota Sekbid 6</td>
+										<td>8E</td>
+									</tr>
+									<tr>
+										<td>37</td>
+										<td>Muhammad Ariq</td>
+										<td>Anggota Sekbid 6</td>
+										<td>8F</td>
+									</tr>
+									<tr>
+										<td>38</td>
+										<td>Naila Kirana Maharani</td>
+										<td>Sekbid 7 – Koordinator bidang</td>
+										<td>8A</td>
+									</tr>
+									<tr>
+										<td>39</td>
+										<td>Almer Clearesta Bila</td>
+										<td>Anggota Sekbid 7</td>
+										<td>7F</td>
+									</tr>
+									<tr>
+										<td>40</td>
+										<td>Anjani Maqfirohmah</td>
+										<td>Anggota Sekbid 7</td>
+										<td>8D</td>
+									</tr>
+									<tr>
+										<td>41</td>
+										<td>Fatimah Febrianti</td>
+										<td>Anggota Sekbid 7</td>
+										<td>8C</td>
+									</tr>
+									<tr>
+										<td>42</td>
+										<td>Shireen Aulia Faqih</td>
+										<td>Anggota Sekbid 7</td>
+										<td>7E</td>
+									</tr>
+									<tr>
+										<td>43</td>
+										<td>Reva Aulia</td>
+										<td>Anggota Sekbid 7</td>
+										<td>7E</td>
+									</tr>
+								</tbody>
+								</table>
+                    		</div>
+                		</div>
+            		</div>
+            		<div class="card mb-5">
+                		<div class="card-header">
+                    		<h3>Keterangan Bidang :</h3>
+                		</div>
+                		<div class="card-body">
+                    		<div class="table-responsive">
+                        		<table class="table table-striped">
+								<thead>
+									<tr>
+										<th>No</th>
+										<th>Nama</th>
+										<th>Keterangan</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Sekbid 1 / Bidang I</td>
+										<td>Kerohanian</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Sekbid 2 / Bidang II</td>
+										<td>Cinta Tanah Air</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>Sekbid 3 / Bidang III</td>
+										<td>Pendidikan Dan Pendahuluan Bela Negara</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>Sekbid 4 / Bidang IV</td>
+										<td>Berorganisasi, Pendidikan , Kepimpinan, dan Politik</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>Sekbid 5 / Bidang V</td>
+										<td>Budi Pekerti Luhur</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>Sekbid 6 / Bidang VI</td>
+										<td>Olahraga</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>Sekbid 7 / Bidang VII</td>
+										<td>Apresiasi Karya Seni</td>
+									</tr>
+								</tbody>
+								</table>
+                    		</div>
+                		</div>
+            		</div>
+            	</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div><p class="love">Made With ❤️ By <a rel="nofollow"
+                href="https://mfarels.id" target="_parent">MFarelS✓</a><br>© 2021 <a rel="nofollow"
+                href="https://mfarels.id" target="_parent">MFarelS✓</a>.  All Rights Reserved<br><br>Big Special Thanks To <a rel="nofollow" href="https://github.com/ariiardana/" target="_parent">Ariiardana</a>, <a rel="nofollow" href="https://github.com/hisyamardiansyah/" target="_parent">Hisyam Ardiansyah</a>, <a rel="nofollow" href="https://github.com/sandhikagalih/" target="_parent">Sandhika Galih</a>, <a rel="nofollow" href="https://instagram.com/bintang_nur_pradana/" target="_parent">Bintang Nur Pradana</a>, <a rel="nofollow" href="https://github.com/ibnusyawall/" target="_parent">IbnuSyawall</a>, <a rel="nofollow" href="https://github.com/MrHecka/" target="_parent">MrHecka</a>, <a rel="nofollow" href="https://wa.me/6285745351659" target="_parent">Ilham Nezuko</a></p></div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
