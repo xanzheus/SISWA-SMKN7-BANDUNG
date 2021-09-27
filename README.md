@@ -1,2 +1,2 @@
-# Website OSIS SMPN 95 Jakarta
+# Website SISWA SMKN 7 BANDUNG
 [`LINK`](https://xanzheus.github.io/SISWA-SMKN7-BANDUNG/)
