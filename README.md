@@ -1,2 +1,2 @@
 # Website OSIS SMPN 95 Jakarta
-Source Code [`osis95.xyz`](https://osis95.xyz)
+[`LINK`](https://xanzheus.github.io/SISWA-SMKN7-BANDUNG/)
