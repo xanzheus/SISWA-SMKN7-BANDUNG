@@ -1,2 +1,2 @@
-# Website SISWA SMKN 7 BANDUNG
+# WEB DEMO SISWA SMKN 7 BANDUNG
 [`LINK`](https://xanzheus.github.io/SISWA-SMKN7-BANDUNG/)
